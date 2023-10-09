@@ -70,3 +70,4 @@ Can the model's predictions be used to optimize pricing strategies and improve r
 
 In the Hotel Booking Cancellation Prediction project, the target variable (also known as the label) will be the is_canceled column. This binary variable indicates whether a booking was canceled (1) or not (0). The goal of the machine learning model will be to predict this variable based on the other features in the dataset.
 
+
