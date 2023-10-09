@@ -31,7 +31,6 @@ Can the model's predictions be used to optimize pricing strategies and improve r
 * Data shape: Number of rows = 119210
               Number of columns = 30
 
-* What does each row represent:
 * Data Dictionary
 1. hotel: Type of hotel (e.g., City hotel, Resort hotel).
 2. is_canceled: Binary value indicating if the booking was canceled (1) or not (0).
