@@ -26,7 +26,7 @@ Can the model's predictions be used to optimize pricing strategies and improve r
 
 ## 3. Data
 
-* Data Source: https://www.kaggle.com/datasets/mesutyurukcu/hotel-booking-cancellation-prediction
+* Data Source: This dataset is obtained from Kaggle and is related Hotel Booking Cancellation Prediction
 * Data Size: 3.41 MB
 * Data shape: Number of rows = 119210
               Number of columns = 30
