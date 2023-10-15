@@ -69,4 +69,77 @@ Can the model's predictions be used to optimize pricing strategies and improve r
 
 In the Hotel Booking Cancellation Prediction project, the target variable (also known as the label) will be the is_canceled column. This binary variable indicates whether a booking was canceled (1) or not (0). The goal of the machine learning model will be to predict this variable based on the other features in the dataset.
 
+# 4. Exploratory Data Analysis
+
+### 4.1 Data Cleaning
+
+### 4.1.1 Checking and removing duplicates from the Data Set
+
+* Checking the duplicates from the data set 
+
+### 4.1.2 Analysing the data and visualization
+
+* This plot is designed to show the relationship between two variables: whether a hotel booking was canceled (is_canceled) and whether the guest who made the booking is a repeated guest (is_repeated_guest).
+* The is_canceled column likely contains binary values (0 or 1) indicating whether each booking was canceled or not, and the is_repeated_guest column also likely contains binary values indicating whether each guest is a repeated guest or not.
+* The bars in the plot represent the frequency of each combination of is_canceled and is_repeated_guest values in the data.
+* The resulting bar plot should show the relationship between whether a booking was canceled and whether the guest was a repeated guest. 
+* Each bar in the plot represents a combination of is_canceled and is_repeated_guest values, and the height of the bar represents the frequency (or count) of that combination in the target_data_summary data set.
+  ![image](https://github.com/Tarakunduru/UMBC-DATA606-FALL2023-THURSDAY/assets/143665432/de9731e8-7e3c-435e-89b6-e596390c60d1)
+
+* This boxplot is designed to show the relationship between hotel booking cancellations (is_canceled), lead time (lead_time), and hotel type (hotel). 
+* The x-axis represents booking cancellations, the y-axis represents lead time, and different hotel types are differentiated using the hue parameter. 
+* This plot aims to compare lead time distributions for canceled and non-canceled bookings for both resort and city hotels. The title "resort and city hotel outliers" suggests a focus on identifying outliers in these distributions.
+   ![image](https://github.com/Tarakunduru/UMBC-DATA606-FALL2023-THURSDAY/assets/143665432/974d31fc-47d5-4720-8456-321fea578864)
+
+
+* This boxplot examines the relationship between hotel booking cancellations (is_canceled), the number of weekend nights stayed (stays_in_weekend_nights), and the type of hotel (hotel). 
+* The x-axis represents booking cancellations, the y-axis represents the number of weekend nights stayed, and different hotel types are differentiated using the hue parameter.
+* The plot's purpose is to compare the distribution of weekend nights stayed for canceled and non-canceled bookings across different hotel types. The title "resort and city hotel outliers" suggests a focus on identifying outliers in this distribution.
+   ![image](https://github.com/Tarakunduru/UMBC-DATA606-FALL2023-THURSDAY/assets/143665432/0d4d7e1c-7c90-4037-ba2e-09910c7ee53e)
+
+
+
+* this plot visualize the distribution of total special requests (total_of_special_requests) made by guests in the hotel_data DataFrame. 
+* The x-axis of the histogram represents the different counts of special requests, and the y-axis represents the frequency of each count. 
+* The seaborn function histplot is used to create the histogram, with x set to 'total_of_special_requests' 
+* The title "distribution of total special requests" is set using plt.title(). This plot is intended to provide a visual representation of how frequently different numbers of special requests are made by guests.
+  ![image](https://github.com/Tarakunduru/UMBC-DATA606-FALL2023-THURSDAY/assets/143665432/ad025964-3903-4efa-a62b-cb37099cbfbe)
+
+* This plot explore the relationship between reserved room types (reserved_room_type), lead time for booking (lead_time), and hotel type (hotel) in the hotel_data DataFrame.
+* The x-axis represents the different room types, while the y-axis represents the lead time for bookings. The catplot function is used with data set to hotel_data, x set to 'reserved_room_type', y set to 'lead_time', and col set to 'hotel'.
+* This creates separate plots for each hotel type. The color of the plot points is set to green using the color parameter.
+   ![image](https://github.com/Tarakunduru/UMBC-DATA606-FALL2023-THURSDAY/assets/143665432/baae8d8d-8a52-4e1b-b777-b1f22ba265d8)
+
+
+* This plot generates to visualize the relationship between booking cancellations (is_canceled), the number of days in the waiting list (days_in_waiting_list), and the type of deposit (deposit_type). 
+* In the plot, the x-axis represents booking cancellations, the y-axis represents the number of days in the waiting list, and the col parameter is used to create separate plots for each deposit type. 
+* y set to 'days_in_waiting_list', x set to 'is_canceled', and col set to 'deposit_type'. All the data points are colored red, as specified by the color parameter.
+  ![image](https://github.com/Tarakunduru/UMBC-DATA606-FALL2023-THURSDAY/assets/143665432/1fd9bdbf-b3c3-414a-b3c7-6751e5665771)
+
+
+
+* This plot displays the distribution of hotel bookings across different market segments (market_segment) and their cancellation status (is_canceled).
+* In the plot, the x-axis represents the market segments, and the y-axis represents the count of bookings. The hue parameter is used to differentiate between canceled and non-canceled bookings with different colors. 
+* The plot is further enhanced by rotating the x-axis labels by 65 degrees and aligning them to the right for better readability, as specified by the set_xticklabels method.
+ ![image](https://github.com/Tarakunduru/UMBC-DATA606-FALL2023-THURSDAY/assets/143665432/9510e339-512a-4682-a290-88c2b1240126)
+
+
+
+
+## Conclusions:
+
+Cancellation count is less for repeated guests
+
+Lead time is less for confirm bookings lead time is less for resort hotels
+
+Stay in weekend nights is equal for both confirm and cancelled cases in both the hotels but the outliers are high in confirmed classes
+
+Distribution of total special requests is left skewed
+
+Lead time is high for room types C,A and D for both the hotels
+
+Deposit type is refundable waiting list days are same but the other categories it is high.
+
+
+
 
