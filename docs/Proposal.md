@@ -82,18 +82,16 @@ In the Hotel Booking Cancellation Prediction project, the target variable (also 
 * This plot is designed to show the relationship between two variables: whether a hotel booking was canceled (is_canceled) and whether the guest who made the booking is a repeated guest (is_repeated_guest).
 * The is_canceled column likely contains binary values (0 or 1) indicating whether each booking was canceled or not, and the is_repeated_guest column also likely contains binary values indicating whether each guest is a repeated guest or not.
 * The bars in the plot represent the frequency of each combination of is_canceled and is_repeated_guest values in the data.
-* The resulting bar plot should show the relationship between whether a booking was canceled and whether the guest was a repeated guest. 
-* Each bar in the plot represents a combination of is_canceled and is_repeated_guest values, and the height of the bar represents the frequency (or count) of that combination in the target_data_summary data set.
-  ![image](https://github.com/Tarakunduru/UMBC-DATA606-FALL2023-THURSDAY/assets/143665432/de9731e8-7e3c-435e-89b6-e596390c60d1)
+ ![image](https://github.com/Tarakunduru/UMBC-DATA606-FALL2023-THURSDAY/assets/143665432/de9731e8-7e3c-435e-89b6-e596390c60d1)
 
 * This boxplot is designed to show the relationship between hotel booking cancellations (is_canceled), lead time (lead_time), and hotel type (hotel). 
-* The x-axis represents booking cancellations, the y-axis represents lead time, and different hotel types are differentiated using the hue parameter. 
+* The x-axis represents booking cancellations, the y-axis represents lead time.
 * This plot aims to compare lead time distributions for canceled and non-canceled bookings for both resort and city hotels. The title "resort and city hotel outliers" suggests a focus on identifying outliers in these distributions.
    ![image](https://github.com/Tarakunduru/UMBC-DATA606-FALL2023-THURSDAY/assets/143665432/974d31fc-47d5-4720-8456-321fea578864)
 
 
 * This boxplot examines the relationship between hotel booking cancellations (is_canceled), the number of weekend nights stayed (stays_in_weekend_nights), and the type of hotel (hotel). 
-* The x-axis represents booking cancellations, the y-axis represents the number of weekend nights stayed, and different hotel types are differentiated using the hue parameter.
+* The x-axis represents booking cancellations, the y-axis represents the number of weekend nights stayed.
 * The plot's purpose is to compare the distribution of weekend nights stayed for canceled and non-canceled bookings across different hotel types. The title "resort and city hotel outliers" suggests a focus on identifying outliers in this distribution.
    ![image](https://github.com/Tarakunduru/UMBC-DATA606-FALL2023-THURSDAY/assets/143665432/0d4d7e1c-7c90-4037-ba2e-09910c7ee53e)
 
