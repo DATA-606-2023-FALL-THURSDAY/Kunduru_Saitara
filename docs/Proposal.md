@@ -152,7 +152,8 @@ In the Hotel Booking Cancellation Prediction project, the target variable (also 
 
  # 6. Machine Learning Models
 
-       ![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Kunduru_Saitara/assets/143665432/e40d7a41-a213-4afd-a080-14dcaf7c1058)
+       ![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Kunduru_Saitara/assets/143665432/e9153263-8085-40d5-8379-cbfcb1e278ef)
+
 
 
  ## 6.1 Logistic Regression Model:
