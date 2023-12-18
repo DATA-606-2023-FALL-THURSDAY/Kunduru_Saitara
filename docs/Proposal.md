@@ -121,6 +121,33 @@ In the Hotel Booking Cancellation Prediction project, the target variable (also 
 * The plot is further enhanced by rotating the x-axis labels by 65 degrees and aligning them to the right for better readability, as specified by the set_xticklabels method.
  ![image](https://github.com/Tarakunduru/UMBC-DATA606-FALL2023-THURSDAY/assets/143665432/9510e339-512a-4682-a290-88c2b1240126)
 
+# 5. Feature selection methods
+## 5.1 Univariate feature selection
+
+* Features in matrix X are scaled using Min-Max scaling with MinMaxScaler().
+* Utilizing SelectKBest with chi-squared (chi2) scoring, the code conducts independent feature selection based on significance to the target variable y.
+* Feature scores and names are stored in dfscores and dfcolumns DataFrames, concatenated into featureScores for streamlined analysis.
+* The nlargest() method extracts and prints the top 10 features by chi-squared scores, providing a concise summary.
+* The printed DataFrame with 'columns' and 'Score' aids in identifying influential variables for subsequent modeling. Univariate selection simplifies models and boosts predictive performance by focusing on key features.
+
+   ![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Kunduru_Saitara/assets/143665432/58ca9f33-5a86-4fb8-899c-959014577dfc)
+
+## 5.2 Correlation matrix with heatmap
+
+* The image computes a correlation matrix (data_corr) for the hotel_data, revealing relationships between variables.
+* A 12x9-inch heatmap is created using seaborn (sns.heatmap()) with the "RdYlGn" color map, visually representing the correlations.
+* The resulting heatmap is displayed using plt.show(), offering an intuitive overview of the dataset's correlation structure.
+
+  ![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Kunduru_Saitara/assets/143665432/5580049f-6fba-48f9-a83d-63ffac4d3fb4)
+
+## 5.3 Top Features
+
+* The code defines top_n as the number of features to display and extracts the top N important features using nlargest() on feat_importances.
+* A horizontal bar graph is created using top_features.plot(kind='barh') for visualizing the importance scores of the selected features.
+* The resulting bar graph is shown with plt.show(), offering a concise visual summary of the top features.
+
+  ![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Kunduru_Saitara/assets/143665432/f49be094-fc86-48ab-be8e-4eb23f64d9e0)
+
 
 
 
