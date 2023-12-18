@@ -152,7 +152,7 @@ In the Hotel Booking Cancellation Prediction project, the target variable (also 
 
  # 6. Machine Learning Models
 
-       C:\Users\kundu\OneDrive\Pictures\Screenshots\Screenshot 2023-11-30 182206.png
+       ![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Kunduru_Saitara/assets/143665432/5169fa55-3047-4e5d-a0d4-ec0cf181a35b)
 
 
 
