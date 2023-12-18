@@ -122,6 +122,7 @@ In the Hotel Booking Cancellation Prediction project, the target variable (also 
  ![image](https://github.com/Tarakunduru/UMBC-DATA606-FALL2023-THURSDAY/assets/143665432/9510e339-512a-4682-a290-88c2b1240126)
 
 # 5. Feature selection methods
+
 ## 5.1 Univariate feature selection
 
 * Features in matrix X are scaled using Min-Max scaling with MinMaxScaler().
@@ -149,6 +150,38 @@ In the Hotel Booking Cancellation Prediction project, the target variable (also 
   ![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Kunduru_Saitara/assets/143665432/f49be094-fc86-48ab-be8e-4eb23f64d9e0)
 
 
+ # 6. Machine Learning Models
+ ## 6.1 Logistic Regression Model:
+
+* Logistic Regression model initialized and trained on X_train_imp and y_train_imp.
+Predictions:
+* Predictions made on training and testing data (train_pred, test_pred).
+* Confusion matrix and key metrics computed: accuracy, recall, precision, F1-score.
+* Training accuracy: accuracy_score(y_train_imp, train_pred).
+  Testing accuracy: accuracy_score(y_test_imp, test_pred).
+* Numerical values for recall, precision, and F1-score presented.
+
+
+## 6.2 Decision Tree Model:
+
+* Decision Tree Classifier initialized with entropy criterion and max depth of 10.
+   Trained on imputed data (X_train_imp and y_train_imp).
+* Predictions made for training and testing data (d_tree_train_pred, d_tree_test_pred).
+* Evaluation Metrics:Confusion matrix, recall, and F1-score computed.
+* Accuracy Scores: Training accuracy: accuracy_score(y_train_imp, d_tree_train_pred).
+  Testing accuracy: accuracy_score(y_test_imp, d_tree_test_pred).
+
+## 6.3 Random Forest Model:
+
+* Random Forest Classifier initialized with 80 decision trees (n_estimators=80).
+Trained on imputed data (X_train_imp and y_train_imp).
+* Predictions made for training and testing data (rf_train_pred, rf_test_pred).
+* Evaluation Metrics: Confusion matrix, recall, and F1-score computed.
+* Accuracy Scores:Training accuracy: accuracy_score(y_train_imp, rf_train_pred).
+Testing accuracy: accuracy_score(y_test_imp, rf_test_pred).
+
+
+
 
 
 ## Conclusions:
@@ -165,6 +198,16 @@ Lead time is high for room types C,A and D for both the hotels
 
 Deposit type is refundable waiting list days are same but the other categories it is high.
 
+Logistic Regression demonstrated the highest overall performance with the highest accuracy, precision, recall, and F1 score among the three classifiers.
 
+Decision Tree exhibited slightly lower performance compared to Logistic Regression but still provided reasonable accuracy and balanced precision and recall.
+
+Random Forest showed competitive results, balancing precision and recall, providing a good trade-off between the two.
+
+## References:
+
+M. R. H. Subho, M. R. Chowdhury, D. Chaki, S. Islam and M. M. Rahman, "A Univariate Feature Selection Approach for Finding Key Factors of Restaurant Business," 2019 IEEE Region 10 Symposium (TENSYMP), Kolkata, India, 2019, pp. 605-610, doi: 10.1109/TENSYMP46218.2019.8971127.
+V. Aggarwal, V. Gupta, P. Singh, K. Sharma and N. Sharma, "Detection of Spatial Outlier by Using Improved Z-Score Test," 2019 3rd International Conference on Trends in Electronics and Informatics (ICOEI), Tirunelveli, India, 2019, pp. 788-790, doi: 10.1109/ICOEI.2019.8862582.
+G. König, C. Molnar, B. Bischl and M. Grosse-Wentrup, "Relative Feature Importance," 2020 25th International Conference on Pattern Recognition (ICPR), Milan, Italy, 2021, pp. 9318-9325, doi: 10.1109/ICPR48806.2021.9413090.
 
 
